@@ -1,0 +1,4 @@
+.result-wrap{
+    color:gray;
+    text-align: center;
+}
