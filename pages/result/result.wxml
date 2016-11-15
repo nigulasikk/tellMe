@@ -1,1 +1,23 @@
-<view class="result-wrap">{{name}}</view>
+<view class="result-bg">
+    <view class="result-name">{{name}}</view>
+    <view class="result-info">
+    <icon type="success" size="13" color="#b2b2b2"/> 100 
+        <button class="fr-btn" size="mini" type="default">关注</button>
+        <button class="fr-btn"  size="mini" type="primary">回答</button>
+    </view>
+    <view wx:key="id" class="result-block" wx:for="{{array}}" >
+       <view class="answer-person">
+           <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+           <text class="answer-nickname">{{item.nickName}}</text>
+       </view>
+        <view class="result-title">
+            {{item.title}}
+        </view>
+         <view class="result-message">
+          {{item.message}}
+        </view>
+        <view class="item-info">
+          {{item.zan}} 赞同 .  {{item.modifyTime}}
+        </view>
+    </view>
+</view>

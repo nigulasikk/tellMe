@@ -8,6 +8,6 @@
   <view class="usermotto">
     <!--<text>{{inputName}}</text>-->
     <input bindinput="bindKeyInput" placeholder="输入Ta的名字" />
-    <button class="enter-btn" type="primary" bindtap="doTest"> 我想对他说</button>
+    <button class="enter-btn" size="default" type="primary" bindtap="doTest">进入</button>
   </view>
 </view>

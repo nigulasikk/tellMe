@@ -1,4 +1,56 @@
-.result-wrap{
-    color:gray;
+.result-name{
+    color:black;
     text-align: center;
+    padding:30rpx;
+    font-size:17pt;
+}
+.result-info{
+    color:#b2b2b2;
+    font-size: 14pt;
+    height: 40px;
+}
+.result-message{
+    font-size: 14pt;
+    color:#353535;
+    margin-top: 20rpx;
+}
+.result-block{
+    background: white;
+    margin-top:20rpx;
+    padding:30rpx;
+    border-bottom: 1px gainsboro solid;
+}
+.result-bg{
+    background: rgb(240,244,247);
+}
+.result-title{
+    color:black;
+    font-size: 16pt;
+    margin-top:10px;
+}
+.fr-btn{
+    float:right;
+    margin-right:10px;
+}
+.item-info{
+    font-size: 11pt;
+    margin-top:12px;
+    color:#b2b2b2;
+}
+.answer-person{
+    display: -webkit-flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.answer-header{
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+}
+.answer-nickname{
+    color:#b2b2b2;
+    font-size: 11pt; 
+    line-height: 15pt;   
+    margin-left:10pt;
 }
