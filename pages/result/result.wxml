@@ -71,6 +71,9 @@
                 <view class="pf">
                 欠你一个表白💖。写个程序可能就是程序GG最擅长的事情了，嘻嘻️~~~
                 </view>
+                 <view class="pf">
+                        <image class="content-img2" src="/images/fly.jpg"></image>
+                </view>
             </view>
             <view class="item-info">
             20 赞同 .  2016-11-18
@@ -133,7 +136,10 @@
                 </view>
                 <view class="pf">
                     当天有点伤心，最后我对自己说："可能她生活中遇到了点问题，只是把她朋友圈删光了吧。"，不过后来你又主动来找我聊天了，我觉得我和你之前应该没有出什么岔子。
-                </view>                
+                </view>  
+                 <view class="pf">
+                        <image class="content-img2" src="/images/yaom.png"></image>
+                </view>              
             </view>
             <view class="item-info">
             7 赞同 .  2016-11-18
