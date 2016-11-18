@@ -12,7 +12,16 @@
 .result-message{
     font-size: 14pt;
     color:#353535;
+    line-height: 1.4;
     margin-top: 20rpx;
+}
+.result-message .pf{
+    margin-top:15rpx;
+}
+.content-img{
+    width:250px;
+    height:334px;
+    display:inline-block;
 }
 .result-block{
     background: white;
