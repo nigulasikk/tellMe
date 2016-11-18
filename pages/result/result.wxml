@@ -1,8 +1,8 @@
 <view class="result-bg">
     <view class="result-name">{{name}}</view>
     <view class="result-info">
-        <button class="fr-btn" size="mini" type="default">关注</button>
-        <button class="fr-btn"  size="mini" type="primary">回答</button>
+        <button class="fr-btn" size="mini" type="default" bindtap="follow">关注</button>
+        <button class="fr-btn"  size="mini" type="primary" bindtap="answer">回答</button>
     </view>
     <!--<view wx:key="id" class="result-block" wx:for="{{array}}" >
        <view class="answer-person">
@@ -19,7 +19,64 @@
           {{item.zan}} 赞同 .  {{item.modifyTime}}
         </view>
     </view>-->
-    <view  class="result-block" >
+    <view wx:if="{{name=='钱凯杰'}}">
+        <view  class="result-block" >
+                <view class="answer-person">
+                    <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+                    <text class="answer-nickname">自行车被偷了</text>
+                </view>
+                <view class="result-title">
+                    他在你心中的印象标签是什么？
+                </view>
+                <view class="result-message">
+                    <view class="pf">
+                        半吊子前端开发 ，不知名段子手 ，前手机摄影师，前资深单身狗，小学班级篮球队队长，大学操场诗人~~~
+                    </view>
+                </view>
+                <view class="item-info">
+                    50 赞同 .  2016-11-18
+                </view>
+            </view>
+           <view  class="result-block" >
+                <view class="answer-person">
+                    <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+                    <text class="answer-nickname">自行车被偷了</text>
+                </view>
+                <view class="result-title">
+                    这个人让你感觉最牛逼的地方在哪里？
+                </view>
+                <view class="result-message">
+                    <view class="pf">
+                        他从来没有失过恋，不过这也是事实。👀
+                    </view>
+                    <view class="pf">
+                        <image class="content-img2" src="/images/truth.jpeg"></image>
+                    </view>
+                </view>
+                <view class="item-info">
+                    50 赞同 .  2016-11-18
+                </view>
+            </view>
+    </view>
+    <view wx:if="{{name=='邓晓雨'}}">
+     <view  class="result-block" >
+            <view class="answer-person">
+                <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+                <text class="answer-nickname">自行车被偷了</text>
+            </view>
+            <view class="result-title">
+                为什么要做这么一个小程序？
+            </view>
+            <view class="result-message">
+                <view class="pf">
+                欠你一个表白💖。写个程序可能就是程序GG最擅长的事情了，嘻嘻️~~~
+                </view>
+            </view>
+            <view class="item-info">
+            20 赞同 .  2016-11-18
+            </view>
+        </view>
+        <view  class="result-block" >
        <view class="answer-person">
            <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
            <text class="answer-nickname">自行车被偷了</text>
@@ -32,11 +89,14 @@
              这是那天在钱塘江边上你问我的一个问题，后来我回想了下，其实不全是那天所说的万金油的回答“漂亮”什么的。
             </view>
              <view class="pf">
-                我脑子里出现的有一个画面是那天送你们回去时候，你在后座照顾卤蛋，我通过后视镜看到你的样子，觉得会照顾别人的女生让人感觉很舒服。
+                我脑子里出现的有两个画面，一个是那天你太困，把微信app删了，来找我，我嘴上说："你真是逗"。心里在想："这姑娘还是蛮可爱的。"
+             </view>
+             <view class="pf">
+                还有一个画面就是那天公司KTV结束送你们回去时候，你在后座照顾喝得大醉的卤蛋，我通过后视镜看到你的样子，觉得会照顾别人的女生让人感觉很舒服。
              </view>
         </view>
         <view class="item-info">
-          20 赞同 .  2016-11-18
+          18 赞同 .  2016-11-18
         </view>
     </view>
     <view  class="result-block" >
@@ -56,9 +116,29 @@
              </view>
         </view>
         <view class="item-info">
-          20 赞同 .  2016-11-18
+          11 赞同 .  2016-11-18
         </view>
     </view>
+     <view  class="result-block" >
+        <view class="answer-person">
+            <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+            <text class="answer-nickname">自行车被偷了</text>
+        </view>
+            <view class="result-title">
+            Ta有让你感到困惑的时候吗？
+            </view>
+            <view class="result-message">
+                <view class="pf">
+                    一次发现你的朋友圈突然变成了一道横杠，我就感觉有点困惑了："之前好像一直聊得不错呀？为什么呢？"，然后我网上去搜，网上说："这女生不想你了解他的秘密㊙️"
+                </view>
+                <view class="pf">
+                    当天有点伤心，最后我对自己说："可能她生活中遇到了点问题，只是把她朋友圈删光了吧。"，不过后来你又主动来找我聊天了，我觉得我和你之前应该没有出什么岔子。
+                </view>                
+            </view>
+            <view class="item-info">
+            7 赞同 .  2016-11-18
+            </view>
+        </view>
      <view  class="result-block" >
        <view class="answer-person">
            <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
@@ -72,7 +152,7 @@
              有，先讲一个故事，瓜子，板凳先准备好。
             </view>
              <view class="pf">
-                那次去香港旅游，一个朋友（她，他男朋友，我都是高中同学）托我带一瓶化妆水，一支口红还有她男朋友的两条ck内裤。去SaSa帮她买化妆水挺顺利，有货，内裤也有货，可口红💄那边没货，然后我就微信她说没货，那她说：“也无所谓。”后来一次逛街，我就路过了那个口红的专卖店，进去一问，这边这个有货，然后我就懒得问直接买下来了。买下来后我微信她（并没有告诉她我已经买下来了）：“那口红还要不要的。”她说：“不要了了。”
+                那次去香港旅游，一个朋友（她，他男朋友，我都是高中同学）托我带一瓶化妆水，一支口红还有她男朋友的两条ck内裤。去SaSa帮她买化妆水挺顺利，有货，内裤也有货，可口红💄那边没货，然后我就微信她说没货，那她说：“也无所谓。”后来一次逛街，我就路过了那个口红的专卖店，进去一问，这边这个有货，然后我就懒得问直接买下来了。买下来后我微信她（并没有告诉她我已经买下来了）：“那口红还要不要的。”她说：“不要了。”
              </view>
             <view class="pf">
 虽然她不要了，但我心里一点都不着急，因为我心里其实是有一个想送的人的的，嘻嘻嘻😀，就是你！
@@ -80,24 +160,9 @@
             <view  class="pf">后来一直不敢送，怕你不收，一直在思考送的时机，觉得现在表白这个时机还是不错哒，....</view>
         </view>
         <view class="item-info">
-          20 赞同 .  2016-11-18
+          6 赞同 .  2016-11-18
         </view>
     </view>
-     <view  class="result-block" >
-        <view class="answer-person">
-            <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
-            <text class="answer-nickname">自行车被偷了</text>
-        </view>
-            <view class="result-title">
-            为什么要做这么一个小程序？
-            </view>
-            <view class="result-message">
-                <view class="pf">
-                欠你一个表白💖。写个程序可能就是程序GG最擅长的事情了，嘻嘻️~~~
-                </view>
-            </view>
-            <view class="item-info">
-            20 赞同 .  2016-11-18
-            </view>
-        </view>
+    
+    </view>
 </view>
