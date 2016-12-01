@@ -1,0 +1,44 @@
+.result-bg{
+    background: rgb(240,244,247);
+}
+.result-name{
+    color:black;
+    text-align: center;
+    padding:30rpx;
+    font-size:17pt;
+}
+.result-info{
+    color:#b2b2b2;
+    font-size: 14pt;
+    height: 40px;
+}
+.section{
+    margin:30rpx;
+    position:relative;
+}
+.section__title{
+    margin-bottom:20rpx;
+    margin-top:40rpx;
+    font-size: 13pt;
+    color:#888888;
+}
+.dryText{
+    background: white;
+    margin-top:20rpx;
+    color:black;
+     height:25pt;
+    line-height: 25pt;
+    padding-left:3pt;
+}
+.picker{
+    background: white;
+    height:25pt;
+    line-height: 25pt;
+    padding-left:3pt;
+}
+.answer-detail{
+    width:94%;
+    background: white;
+    margin-top:30rpx;
+    padding:20rpx;
+}

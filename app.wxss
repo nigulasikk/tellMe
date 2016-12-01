@@ -8,3 +8,6 @@
   padding: 150rpx 0;
   box-sizing: border-box;
 }
+.box-shadow{
+    box-shadow: 4px 4px 9px rgba(165,165,165,0.75);
+}

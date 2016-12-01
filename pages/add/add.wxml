@@ -1,0 +1,22 @@
+<view class="result-bg">
+    <view class="result-name">{{name}}</view>
+       <view class="section">
+          <view class="section__title">选择一个想对Ta说的话题：
+             <button size="mini" type="default" bindtap="changeQ">换一个话题</button>
+          </view>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker box-shadow">
+                {{array[index]}}
+            </view>
+          </picker>
+          <view class="dryText box-shadow" wx:if="{{index === array.length-1}}">
+              <input placeholder="写一个你感兴趣的话题题目" auto-focus/>
+          </view>
+          <view class="section__title">
+            写下您想对Ta说的话
+          </view>
+          <textarea class="answer-detail box-shadow"  bindblur="bindTextAreaBlur" auto-height placeholder="这里可以写你心中关于Ta的答案" />
+        <view>
+        <button style="margin-top:50rpx;"  size="default" type="primary" bindtap="answer">提交</button>
+    </view>
+</view>
