@@ -4,59 +4,23 @@
         <button class="fr-btn" size="mini" type="default" bindtap="follow">关注</button>
         <button class="fr-btn"  size="mini" type="primary" bindtap="answer">回答</button>
     </view>
-    <!--<view wx:key="id" class="result-block" wx:for="{{array}}" >
-       <view class="answer-person">
-           <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
-           <text class="answer-nickname">{{item.nickName}}</text>
-       </view>
-        <view class="result-title">
-            {{item.title}}
-        </view>
-         <view class="result-message">
-          {{item.message}}
-        </view>
-        <view class="item-info">
-          {{item.zan}} 赞同 .  {{item.modifyTime}}
-        </view>
-    </view>-->
+   
     <view wx:if="{{name=='钱凯杰'}}">
-        <view  class="result-block" >
-                <view class="answer-person">
-                    <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
-                    <text class="answer-nickname">自行车被偷了</text>
-                </view>
-                <view class="result-title">
-                    他在你心中的印象标签是什么？
-                </view>
-                <view class="result-message">
-                    <view class="pf">
-                        半吊子前端开发 ，不知名段子手 ，前手机摄影师，前资深单身狗，小学班级篮球队队长，大学操场诗人~~~
-                    </view>
-                </view>
-                <view class="item-info">
-                    50 赞同 .  2016-11-18
-                </view>
+        <view wx:key="id" class="result-block" wx:for="{{array}}" >
+           <view class="answer-person">
+               <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
+               <text class="answer-nickname">{{item.nickName}}</text>
+           </view>
+            <view class="result-title">
+                {{item.title}}
             </view>
-           <view  class="result-block" >
-                <view class="answer-person">
-                    <image class="answer-header" src="http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83ep6XBmqCVpQNE5sibA5lWmicokyHJPE1ugqMwzBy2RicoNPRzmzCe4bd1OqwXiazyD9plLdKwicFmkxnng/0" background-size="cover"></image>
-                    <text class="answer-nickname">自行车被偷了</text>
-                </view>
-                <view class="result-title">
-                    这个人让你感觉最牛逼的地方在哪里？
-                </view>
-                <view class="result-message">
-                    <view class="pf">
-                        他从来没有失过恋，不过这也是事实。👀
-                    </view>
-                    <view class="pf">
-                        <image class="content-img2" src="/images/truth.jpeg"></image>
-                    </view>
-                </view>
-                <view class="item-info">
-                    50 赞同 .  2016-11-18
-                </view>
+             <text class="result-message">
+              {{item.message}}
+            </text>
+            <view class="item-info">
+              {{item.zan}} 赞同 .  {{item.modifyTime}}
             </view>
+        </view>
     </view>
     <view wx:if="{{name=='邓晓雨'}}">
      <view  class="result-block" >
