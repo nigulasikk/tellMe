@@ -16,7 +16,6 @@
             写下您想对Ta说的话
           </view>
           <textarea class="answer-detail box-shadow"  bindblur="bindTextAreaBlur" auto-height placeholder="这里可以写你心中关于Ta的答案" />
-        <view>
         <button style="margin-top:50rpx;"  size="default" type="primary" bindtap="answer">提交</button>
     </view>
 </view>
